@@ -2,13 +2,13 @@
  An OSINT-based system designed to discover, correlate, and assess publicly exposed digital footprints
   across multiple open sources using autonomous intelligence, risk scoring, and ethical design principles.
   
-##🎯 Problem Context
+## 🎯 Problem Context
 -Every interaction on the internet leaves behind traces — usernames, metadata, images, repositories, and scattered identifiers.
 -Individually, these fragments seem harmless.
 -Together, they form a hidden exposure surface that can be reconstructed using OSINT techniques.
 -This project aims to make that invisible footprint visible, explainable, and responsibly assessed.
 
-##🚀 Core Features
+## 🚀 Core Features
 -Digital Footprint Correlation Graph
 -Exposure Risk Scoring with Explanation
 -Autonomous New Exposure Detection
@@ -16,7 +16,7 @@
 -Exposure Classification
 -Ethical & Privacy-Focused Design
 
-##🏗 High-Level Architecture
+## 🏗 High-Level Architecture
 ```text
 Public Open Sources
         ↓
@@ -33,7 +33,7 @@ Digital Footprint Graph
 Autonomous Monitoring Engine
 ``` 
 
-📂 Project Structure
+## 📂 Project Structure
 ```text
 osint-invisible-footprint/
 │
@@ -88,21 +88,21 @@ osint-invisible-footprint/
 └── .gitignore
 ```
 
-##👥 Team Workflow
+## 👥 Team Workflow
 -Feature-based ownership
 -One feature → one contributor
 -All changes via Pull Requests
 -main branch is protected
 -No direct pushes to main
 
-##Branch Naming Convention
+## Branch Naming Convention
 -feature/digital-footprint-graph
 -feature/risk-scoring
 -feature/autonomous-detection
 -feature/image-location
 -feature/exposure-classification
 
-##🔐 Ethics & Privacy
+## 🔐 Ethics & Privacy
 This system:
 -Uses only publicly accessible data
 -Avoids private or unauthorized sources
@@ -111,7 +111,7 @@ This system:
 -Enforces ethical boundaries in both code and documentation
 -Ethics is treated as a core system component, not an afterthought.
 
-##🏆 Evaluation Alignment
+## 🏆 Evaluation Alignment
 -This project directly addresses:
 -Multi-modal OSINT fusion
 -Visual OSINT & geolocation inference
@@ -119,13 +119,13 @@ This system:
 -Exposure classification & risk severity assessment
 -Ethical compliance & real-world applicability
 
-##⚠ Disclaimer
+## ⚠ Disclaimer
 -This project is intended strictly for educational, research, and awareness purposes.
 -It does not promote surveillance, harassment, or misuse of OSINT techniques.
 
-##📜 License
+## 📜 License
 -Licensed under the MIT License.
 
-##📌 Status
+## 📌 Status
 -🚧 Under active development
 -Feature implementation is ongoing via Pull Requests.
