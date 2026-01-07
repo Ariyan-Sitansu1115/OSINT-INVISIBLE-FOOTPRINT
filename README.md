@@ -96,11 +96,11 @@ osint-invisible-footprint/
 -No direct pushes to main
 
 ## Branch Naming Convention
--feature/digital-footprint-graph
--feature/risk-scoring
--feature/autonomous-detection
--feature/image-location
--feature/exposure-classification
+- feature/digital-footprint-graph
+- feature/risk-scoring
+- feature/autonomous-detection
+- feature/image-location
+- feature/exposure-classification
 
 ## 🔐 Ethics & Privacy
 This system:
