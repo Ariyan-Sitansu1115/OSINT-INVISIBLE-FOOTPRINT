@@ -1,91 +1,123 @@
-## OSINT-INVISIBLE-FOOTPRINT
- An OSINT-based system designed to discover, correlate, and assess publicly exposed digital footprints
-  across multiple open sources using autonomous intelligence, risk scoring, and ethical design principles.
-  
-## 🎯 Problem Context
-- Every interaction on the internet leaves behind traces — usernames, metadata, images, repositories, and scattered identifiers.
-- Individually, these fragments seem harmless.
-- Together, they form a hidden exposure surface that can be reconstructed using OSINT techniques.
-- This project aims to make that invisible footprint visible, explainable, and responsibly assessed.
+# OSINT – Invisible Footprint
+### Autonomous Multi-Modal OSINT Intelligence Platform
 
-## 🚀 Core Features
-- Digital Footprint Correlation Graph
-- Exposure Risk Scoring with Explanation
-- Autonomous New Exposure Detection
-- Image-Based Location Inference
-- Exposure Classification
-- Ethical & Privacy-Focused Design
+An end-to-end OSINT system that autonomously collects, correlates, analyzes, and visualizes publicly exposed digital footprints to assess exposure risk — built with a strong focus on ethics, scalability, and real-world cyber intelligence use cases.
+
+---
+
+## 🚀 Key Features
+
+### 🔍 Multi-Modal Intelligence Fusion
+Collects and correlates intelligence from multiple public data modalities:
+- **Text OSINT** – usernames, emails, documents, posts
+- **Image OSINT** – EXIF metadata, reverse image analysis
+- **Video OSINT** – multi-frame analysis, landmark inference
+- **Audio OSINT** – metadata & contextual signals (where applicable)
+- **Code Repositories** – commit history, identity leakage
+- **Geospatial Signals** – location inference from public artifacts
+
+### 🧠 Autonomous Self-Learning Agent
+- Continuous OSINT scanning without manual triggers
+- Differential exposure detection (what changed over time)
+- Pattern learning from previous scans
+- Adaptive discovery of new sources and signals
+
+---
+
+### 🔁 Reverse OSINT Intelligence
+Turns surveillance inward to detect tracking and monitoring risks:
+- Tracker & scraper detection
+- Surveillance and indexing inference
+- Dark-web & breach correlation (where public references exist)
+
+---
+
+### 🧩 Unified Intelligence Graph
+- Cross-platform identity linking
+- Temporal correlation of signals
+- Network and relationship analysis
+- Graph-based intelligence representation
+
+### ⚠️ Exposure Classification & Risk Scoring
+Automatically classifies exposed signals:
+- PII
+- Credentials
+- Behavioral patterns
+- Sensitivity & exploitability
+- Recency-based risk weighting
+
+Generates an **explainable risk score** for each entity.
+
+---
+
+### 📊 Interactive Visual Dashboard
+- Live intelligence graphs
+- Risk indicators
+- Platform-wise exposure breakdown
+- Drill-down analytics for investigators
+
+###  Live Demo
+End-to-end demo flow:
+**Input → Scan → Correlate → Visualize → Risk Score**
+(All within minutes)
+
 
 ## 🏗 High-Level Architecture
 ```text
 Public Open Sources
         ↓
-OSINT Data Collection
+Multi-Modal OSINT Data Collection
         ↓
-Normalization & Correlation
+Normalization, Correlation & Reverse OSINT
         ↓
 Exposure Classification
         ↓
 Risk Scoring + Explanation
         ↓
-Digital Footprint Graph
+Unified Digital Footprint Graph
         ↓
 Autonomous Monitoring Engine
+        ↺ (feeds back into Data Collection)
 ``` 
 
 ## 📂 Project Structure
 ```text
-osint-invisible-footprint/
+OSINT-INVISIBLE-FOOTPRINT/
 │
-├── docs/
-│   ├── architecture.md
-│   ├── ethics-and-privacy.md
-│   └── judging-mapping.md
+├── requirements.txt
 │
-├── data_pipeline/
-│   ├── collectors/
-│   ├── normalizers/
-│   └── correlation_engine/
+├── WEB/
+│   ├── static/
+│   │   └── style.css
+│   ├── templates/
+│   │   ├── index.html
+│   │   └── result.html
+│   ├── app.py
+│   └── dashboard_app.py
 │
-├── features/
-│   ├── digital_footprint_graph/
-│   │   ├── graph_builder.py
-│   │   ├── node_definitions.py
-│   │   └── README.md
-│   │
-│   ├── exposure_risk_scoring/
-│   │   ├── risk_model.py
-│   │   ├── explanation_engine.py
-│   │   └── README.md
-│   │
-│   ├── autonomous_exposure_detection/
-│   │   ├── scanner.py
-│   │   ├── diff_engine.py
-│   │   └── README.md
-│   │
-│   ├── image_location_inference/
-│   │   ├── metadata_extractor.py
-│   │   ├── visual_clue_analyzer.py
-│   │   └── README.md
-│   │
-│   ├── exposure_classification/
-│   │   ├── classifier.py
-│   │   ├── category_rules.py
-│   │   └── README.md
+├── OSINT/
+│   ├── __init__.py
+│   ├── analysis/
+│   │   ├── intel_graph.py
+│   │   └── scan2.json
+│   ├── core/
+│   │   ├── autonomous_agent.py
+│   │   ├── orchestrator.py
+│   │   └── risk_engine.py
+│   ├── features/
+│   │   ├── image_osint.py
+│   │   ├── repo_osint.py
+│   │   ├── text_osint.py
+│   │   ├── tracker_detection.py
+│   │   └── video_osint.py
+│   └── utils/
+│       ├── helpers.py
+│       └── __init__.py
 │
-├── utils/
-│   ├── graph_utils.py
-│   ├── privacy_filters.py
-│   └── helpers.py
-│
-├── tests/
-│   ├── test_graph.py
-│   ├── test_risk_scoring.py
-│   └── test_classification.py
-│
-├── README.md
+├── .gitignore
 ├── LICENSE
-└── .gitignore
+└── README.md
+
 ```
 
 ## 👥 Team Workflow
@@ -95,13 +127,6 @@ osint-invisible-footprint/
 - main branch is protected
 - No direct pushes to main
 
-## Branch Naming Convention
-- feature/digital-footprint-graph
-- feature/risk-scoring
-- feature/autonomous-detection
-- feature/image-location
-- feature/exposure-classification
-
 ## 🔐 Ethics & Privacy
 This system:
 - Uses only publicly accessible data
@@ -110,14 +135,6 @@ This system:
 - Focuses on awareness, not surveillance
 - Enforces ethical boundaries in both code and documentation
 - Ethics is treated as a core system component, not an afterthought.
-
-## 🏆 Evaluation Alignment
-- This project directly addresses:
-- Multi-modal OSINT fusion
-- Visual OSINT & geolocation inference
-- Autonomous intelligence
-- Exposure classification & risk severity assessment
-- Ethical compliance & real-world applicability
 
 ## ⚠ Disclaimer
 - This project is intended strictly for educational, research, and awareness purposes.
