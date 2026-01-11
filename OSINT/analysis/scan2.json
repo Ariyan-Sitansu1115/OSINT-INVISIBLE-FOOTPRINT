@@ -1,0 +1,59 @@
+
+{
+    "autonomous_scan":  {
+                            "new_exposure_detected":  "No new exposure detected",
+                            "scan_result":  {
+                                                "image":  {
+
+                                                          },
+                                                "learned_username_pattern":  "dee*",
+                                                "text":  {
+                                                             "entities":  [
+                                                                              {
+                                                                                  "label":  "GPE",
+                                                                                  "text":  "India"
+                                                                              },
+                                                                              {
+                                                                                  "label":  "GPE",
+                                                                                  "text":  "AI"
+                                                                              }
+                                                                          ],
+                                                             "platforms_found":  [
+                                                                                     "https://github.com/deepali",
+                                                                                     "https://twitter.com/deepali",
+                                                                                     "https://instagram.com/deepali"
+                                                                                 ],
+                                                             "username":  "deepali"
+                                                         },
+                                                "timestamp":  1767976863.2775004,
+                                                "username":  "deepali"
+                                            }
+                        },
+    "graph_summary":  {
+                          "edges":  [
+                                        [
+                                            "User",
+                                            "https://github.com/deepali"
+                                        ],
+                                        [
+                                            "User",
+                                            "https://twitter.com/deepali"
+                                        ],
+                                        [
+                                            "User",
+                                            "https://instagram.com/deepali"
+                                        ]
+                                    ],
+                          "nodes":  [
+                                        "User",
+                                        "https://github.com/deepali",
+                                        "https://twitter.com/deepali",
+                                        "https://instagram.com/deepali"
+                                    ]
+                      },
+    "risk_assessment":  {
+                            "explanation":  "Based on public exposure and metadata.",
+                            "level":  "MEDIUM",
+                            "score":  30
+                        }
+}
